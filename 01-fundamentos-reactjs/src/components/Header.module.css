@@ -1,3 +1,10 @@
 .header {
-  background: #333;
+  background: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.header img {
+  height: 3.2rem;
 }
