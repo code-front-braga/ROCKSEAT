@@ -1,6 +1,6 @@
 .sidebar {
   background: var(--gray-800);
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   overflow: hidden;
 }
 
@@ -15,10 +15,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-top: calc(0px - 2rem - 1rem);
+}
+
+.avatar {
+  width: calc(4rem + 1rem);
+  height: calc(4rem + 1rem);
+  border-radius: 0.8rem;
+  border: 0.3rem solid var(--gray-800);
+  outline: 0.2rem solid var(--green-500);
+}
+
+.profile strong {
+  margin-top: 1rem;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.profile span {
+  font-size: 1.4rem;
+  color: var(--gray-400);
+  line-height: 1.6;
 }
 
 .sidebar footer {
-  border-top: .1rem solid var(--gray-600);
+  border-top: 0.1rem solid var(--gray-600);
   margin-top: 2.4rem;
   padding: 2rem 3.2rem 3.2rem;
 }
@@ -27,8 +49,8 @@
   width: 100%;
   background: transparent;
   color: var(--green-500);
-  border: .1rem solid var(--green-500);
-  border-radius: .8rem;
+  border: 0.1rem solid var(--green-500);
+  border-radius: 0.8rem;
   height: 5rem;
   font-weight: bold;
   display: block;
@@ -37,4 +59,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  gap: 1rem;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.sidebar footer a:hover {
+  background: var(--green-500);
+  color: var(--white);
 }
