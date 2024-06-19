@@ -3,3 +3,14 @@
 
 Sintaxe:
 const [variável, função_altera_valor_da_variável] = useState()
+
+-> Manipulador de Datas:
+npm i date-fns
+
+
+ESTUDAR!!!!
+-> PROGRAMAÇÃO IMPERATIVA:
+- O que deve ser feito (passo-a-passo);
+
+-> PROGRAMAÇÃO DECLARATIVA:
+- Quais as condições para eu ter o resultado final;
