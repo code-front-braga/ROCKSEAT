@@ -1,0 +1,5 @@
+-> Estado:
+- São variáveis que eu quero que o componente monitore;
+
+Sintaxe:
+const [variável, função_altera_valor_da_variável] = useState()
