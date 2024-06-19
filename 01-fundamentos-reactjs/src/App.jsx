@@ -26,7 +26,7 @@ const posts = [
       },
       { type: 'link', content: 'leo.design/doctorcare' },
     ],
-    publishedAt: new Date('2024-06-19 17:30:00'),
+    publishedAt: new Date('2024-06-14 17:30:00'),
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const posts = [
       },
       { type: 'link', content: 'leo.design/doctorcare' },
     ],
-    publishedAt: new Date('2024-06-19 17:30:00'),
+    publishedAt: new Date('2024-06-16 17:30:00'),
   },
 ];
 

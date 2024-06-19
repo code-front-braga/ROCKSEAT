@@ -1,25 +1,47 @@
+import { format, formatDistanceToNow } from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR';
+
 import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
-export function Post(props) {
+export function Post({ author, publishedAt, content }) {
+  const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm:mm'h'", {
+    locale: ptBR,
+  });
+
+  const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+    locale: ptBR,
+    addSuffix: true,
+  });
+
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar src='https://github.com/code-front-braga.png' />
+          <Avatar src={author.avatarUrl} />
           <div className={styles.authorInfo}>
-            <strong>Leonardo Primo</strong>
-            <span>Web Developer</span>
+            <strong>{author.name}</strong>
+            <span>{author.role}</span>
           </div>
         </div>
-        <time title='18 de Junho às 18:13:00' dateTime='2024-06-18 18:13:00'>
-          Publicado há 1h
+        <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>
+          {publishedDateRelativeToNow}
         </time>
       </header>
 
       <div className={styles.content}>
-        
+        {content.map(item => {
+          if (item.type === 'paragraph') {
+            return <p>{item.content}</p>;
+          } else if (item.type === 'link') {
+            return (
+              <p>
+                <a href='#'>{item.content}</a>
+              </p>
+            );
+          }
+        })}
       </div>
 
       <form className={styles.commentForm}>
