@@ -14,3 +14,13 @@ ESTUDAR!!!!
 
 -> PROGRAMAÇÃO DECLARATIVA:
 - Quais as condições para eu ter o resultado final;
+
+-> Uso do key:
+- Quando faz o uso de uma lista/iteração com o Map, cada componente ou elemento deve ter uma propriedade chamada key;
+
+-> 3 Principais momentos quando se tem um fluxo de renderização:
+1 - Quando o estado altera;
+2 - Quando a propriedade altera;
+3 - Quando um componente pai renderiza novamente;
+
+obs: não utilizar o índice do array como key!
