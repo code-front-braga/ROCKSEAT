@@ -7,6 +7,9 @@ const [variável, função_altera_valor_da_variável] = useState()
 -> Manipulador de Datas:
 npm i date-fns
 
+-> Phosphor React:
+- Pacote de ícones;
+
 
 ESTUDAR!!!!
 -> PROGRAMAÇÃO IMPERATIVA:
@@ -24,3 +27,6 @@ ESTUDAR!!!!
 3 - Quando um componente pai renderiza novamente;
 
 obs: não utilizar o índice do array como key!
+
+-> Imutabilidade:
+- As variáveis não sofrem mutação, ou seja, nunca alteramos um valor de uma variável na memória/aplicação. Na verdade, criamos um novo valor/espaço na memória;
