@@ -30,3 +30,7 @@ obs: não utilizar o índice do array como key!
 
 -> Imutabilidade:
 - As variáveis não sofrem mutação, ou seja, nunca alteramos um valor de uma variável na memória/aplicação. Na verdade, criamos um novo valor/espaço na memória;
+
+
+-> No REACT, quando uma propriedade recebe um valor 'true', ele não precisa ser declarado:
+Ex.: <textarea required={true}>, pode ser somente <textarea required>
