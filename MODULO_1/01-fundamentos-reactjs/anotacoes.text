@@ -43,3 +43,6 @@ function handleLikeComment() {
     return state + 1;
   })
 }
+
+-> O que é TypeScript:
+R.: Nasceu como um superset, um conjunto ferramental em cima da linguagem JavaScript, para conseguir adicionar uma tipagem estática em cima de uma linguagem como JavaScript que tem tipagem dinâmica.
