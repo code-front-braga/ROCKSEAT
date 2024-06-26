@@ -50,7 +50,7 @@ export function Post({ author, publishedAt, content }) {
     setComments(commentsWithoutDeletedOne);
   }
 
-  const isNewCommentEmpty = newCommentText.length === 0
+  const isNewCommentEmpty = newCommentText.length === 0;
 
   return (
     <article className={styles.post}>
