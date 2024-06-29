@@ -1,7 +1,17 @@
+import { AddTask } from './components/AddTask';
+import { Header } from './components/Header';
+import { Tasks } from './components/Tasks';
+import { TasksList } from './components/TasksList';
+
+import './Global.css';
+
 export default function App() {
   return (
     <>
-      <h1>ola</h1>
+      <Header />
+      <AddTask />
+      <Tasks />
+      {/* <TasksList /> */}
     </>
   );
 }
